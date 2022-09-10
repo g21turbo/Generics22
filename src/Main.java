@@ -23,33 +23,37 @@ public class Main {
 
     }
 
-    public static void displayArray(Integer[] array){
-        for (Integer x : array){
+    //Using a generic method
+    public static <T> void displayArray(T[] array){
+        for (T x : array){
             System.out.println(x+ " ");
         }
         System.out.println();
     }
 
-    public static void displayArray(Double[] array){
-        for (Double x : array){
-            System.out.println(x+ " ");
-        }
-        System.out.println();
-    }
 
-    public static void displayArray(Character[] array){
-        for (Character x : array){
-            System.out.println(x+ " ");
-        }
-        System.out.println();
-    }
+    //The long way:
 
-    public static void displayArray(String[] array){
-        for (String x : array){
-            System.out.println(x+ " ");
-        }
-        System.out.println();
-    }
+//    public static void displayArray(Double[] array){
+//        for (Double x : array){
+//            System.out.println(x+ " ");
+//        }
+//        System.out.println();
+//    }
+//
+//    public static void displayArray(Character[] array){
+//        for (Character x : array){
+//            System.out.println(x+ " ");
+//        }
+//        System.out.println();
+//    }
+//
+//    public static void displayArray(String[] array){
+//        for (String x : array){
+//            System.out.println(x+ " ");
+//        }
+//        System.out.println();
+//    }
 
 
 }
